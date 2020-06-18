@@ -1,0 +1,14 @@
+<p>Im array component</p>
+<div>
+    <ul>
+       <li *ngFor="let number of array" >
+          <p>{{number}}</p>
+       </li>
+   </ul>
+</div>
+<div><button (click)='getArray()'>Show Array</button></div>
+<div><button (click)='sortArray()'>Sort Array</button></div>
+<div >
+    <div>Number to add: <input type="text" [(ngModel)]='numberToAdd'/></div>
+    <button (click)='create()'>Create</button>
+</div>
