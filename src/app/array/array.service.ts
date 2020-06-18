@@ -22,6 +22,6 @@ export class ArrayService {
   }
 
   addNumber(number: any): Observable<any> {
-    return this.http.post(this.arrayUrl, { "num": number});
+    return this.http.post(this.arrayUrl, { "num": Number(number)});
   }
 }
